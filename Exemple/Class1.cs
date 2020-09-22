@@ -8,10 +8,17 @@ namespace Exemple
     {
         static void Main(string[] args)
         {
-            var article = new Article("name",29.00);
-            var disque = new Disque("Disque");
-            var video = new Video(23.54);
-            var Livre=new Livree("")
+            var article = new Article("Nom d'article",29.00);
+            article.Acheter();
+            var disque = new Disque("Disque",article.Prix,article.Designation);
+            disque.ecouter();
+            var video = new Video(23.54,article.Prix,article.Designation);
+            var livre = new Livre(2846, 33,article.Prix,article.Designation);
+
+           
+        
+            video.afficher();
+
 
         }
     }

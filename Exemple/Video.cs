@@ -5,21 +5,21 @@ using Articlee;
 
     public class Video:Article
     {
-        protected double Duree { get; set; }
+        public double Duree { get; set; }
         public Video(double duree,double prix, string designation)
         {
             this.Duree = duree;
             this.Prix = prix;
             this.Designation = designation;
         }
-        public Video()
+        public Video(double duree)
         {
-            this.Duree = 0;
+            this.Duree = duree;
         }
-        public double afficher()
+        public void afficher()
         {
-            return this.Duree;
+        Console.WriteLine(Duree);
 
-        }
+    }
     }
 

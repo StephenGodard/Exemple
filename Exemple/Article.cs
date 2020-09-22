@@ -6,8 +6,8 @@ namespace Articlee
 {
     public class Article
     {
-        protected string Designation { get; set; }
-        protected double Prix { get; set; }
+        public string Designation { get; set; }
+        public double Prix { get; set; }
         public Article(string design,double prix)
         {
             this.Designation = design;
@@ -18,7 +18,7 @@ namespace Articlee
         }
         public  void Acheter()
         {
-             Console.WriteLine("Prix de l'article"+ Prix + )
+            Console.WriteLine("Prix de l'article" + Designation + Prix);
 
         }
     }
