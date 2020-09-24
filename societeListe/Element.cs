@@ -4,13 +4,20 @@ using System.Text;
 
 namespace ListeChainee
 {
-    class Element
+    public class Element
     {
-        public object Objet { get; set; }
+        private object Objet { get; set; }
         public Element suivant { get; set; }
-        public Element (object obj)
+        public Element(object obj)
         {
             this.Objet = obj;
+            this.suivant = null;
         }
+        public override string ToString()
+        {
+            return $"{Objet}";
+        }
+
     }
 }
+
