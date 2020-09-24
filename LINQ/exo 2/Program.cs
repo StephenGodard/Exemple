@@ -8,11 +8,11 @@ namespace linqExo1
     {
         public static bool isBissextile(int year)
         {
-            var firstDate = new DateTime(year, 1, 1);
-            var endDate = new DateTime(year, 12, 31);
-            TimeSpan Ts = endDate - firstDate;
+            var newYear = new DateTime(year, 1, 1);
+            var endYear = new DateTime(year, 12, 31);
+            TimeSpan time = endYear - newYear;
 
-            var nbJours = Ts.TotalDays + 1;
+            var nbJours = time.TotalDays + 1;
             if (nbJours == 366)
                 return true;
 
